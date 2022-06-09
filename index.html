@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Library App</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="navBar">
+    <h2>Welcome, to the library</h2>
+  </div>
+  <form action="" id='myForm'>
+    <input type="text" name="title" id="title" placeholder='Title' required><br>
+    <input type="text" name="author" id="author" placeholder='Author' required><br>
+    <input type="number" name="pages" id="pages" placeholder='Pages' required><br>
+    <label for="read">Have you read it?</label>
+    <input type="checkbox" name='read' id='read'><br>
+    <input type="submit" value="Add book" id='submitForm' formmethod='dialog'>
+  </form>
+
+  <div class="booksGrid" id='booksGrid'></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

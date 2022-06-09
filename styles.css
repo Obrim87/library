@@ -1,0 +1,81 @@
+:root {
+  --bg-colour-black: #0B0C10;
+  --bg-colour-blue: #1f2833;
+  --bg-colour-grey: #c5c6c7;
+  --bg-colour-aqua: #66fcf1;
+  --bg-colour-green: #45a19e;
+}
+
+body {
+  background: var(--bg-colour-blue);
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#myForm {
+  color: white;
+  margin: 50px;
+  text-align: center;
+}
+
+#title, #author, #pages, #submitForm {
+  margin: 3px;
+  padding: 5px;
+  width: 200px;
+}
+
+.booksGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+}
+
+.book-card {
+  background: var(--bg-colour-black);
+  color: white;
+  border: solid 2px var(--bg-colour-aqua);
+  border-radius: 4px;
+  width: 200px;
+  margin: 50px;
+  padding: 30px;
+  height: 200px;
+  text-align: center;
+}
+
+.navBar {
+  display: flex;
+  justify-content: left;
+  align-content: center;
+  background: var(--bg-colour-grey);
+  height: 100px;
+  margin: 0;
+  padding: 0 0 0 300px;
+  box-shadow: 0px 5px 5px #45a19e;
+}
+
+.navBar h2 {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  width: 200px;
+  height: 35px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.readYes {
+  background: lightgreen;
+}
+
+.readNo {
+  background: lightcoral;
+}
+
+.removeBtn {
+  background: lightgray;
+}
