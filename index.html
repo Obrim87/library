@@ -14,13 +14,17 @@
   <div class="navBar">
     <h2>Welcome, to the library</h2>
   </div>
-  <form action="" id='myForm'>
-    <input type="text" name="title" id="title" placeholder='Title' required><br>
-    <input type="text" name="author" id="author" placeholder='Author' required><br>
-    <input type="number" name="pages" id="pages" placeholder='Pages' required><br>
+  <form action="" id='myForm' novalidate>
+    <input type="text" name="title" id="title" placeholder='Title' required>
+    <span class="titleError error" aria-live="polite"></span>
+    <input type="text" name="author" id="author" placeholder='Author' required>
+    <span class="authorError error" aria-live="polite"></span>
+    <input type="number" name="pages" id="pages" placeholder='Pages' required>
+    <span class="pagesError error" aria-live="polite"></span>
     <label for="read">Have you read it?</label>
     <input type="checkbox" name='read' id='read'><br>
     <input type="submit" value="Add book" id='submitForm' formmethod='dialog'>
+    <span class="submitError error" aria-live="polite"></span>
   </form>
 
   <div class="booksGrid" id='booksGrid'></div>

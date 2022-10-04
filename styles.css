@@ -20,9 +20,13 @@ body {
 }
 
 #title, #author, #pages, #submitForm {
-  margin: 3px;
+  margin-top: 15px;
   padding: 5px;
   width: 200px;
+}
+
+#read {
+  margin-top: 15px;
 }
 
 .booksGrid {
@@ -79,3 +83,20 @@ body {
 .removeBtn {
   background: lightgray;
 }
+
+.error {
+  display: block;
+  width: 210px;
+  margin: 0 auto 0 auto;
+  padding: 0;
+  font-size: 80%;
+  color: white;
+  background-color: #900;
+  border-radius: 0 0 5px 5px;
+  box-sizing: border-box;
+}
+
+.error.active {
+  padding: 0.3em;
+}
+
